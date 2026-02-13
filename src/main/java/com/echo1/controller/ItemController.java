@@ -27,6 +27,7 @@ public class ItemController {
         return service.getAllItems();
     }
 
+    // TODO: добавить обработку при добавлении
     @PostMapping
     public Item create(@RequestParam String name) {
         return service.addItem(name);
